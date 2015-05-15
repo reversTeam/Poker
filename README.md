@@ -11,6 +11,7 @@ mysql
 ## Run
 Command to run Serveur Poker
 ```bash
+make
 ./server [port]
 ```
 
