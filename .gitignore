@@ -1,0 +1,8 @@
+Makefile.deps
+/Makefile.bak
+/server
+/client
+/_server
+/_client
+*.o
+*~
