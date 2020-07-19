@@ -7,9 +7,9 @@
 # include <inttypes.h>
 
 /** BDD **/
-# define BDD_HOST "127.0.0.1"
-# define BDD_USER "root"
-# define BDD_PASS "root"
+# define BDD_HOST "mysql"
+# define BDD_USER "poker"
+# define BDD_PASS "p0k$r"
 # define BDD_TABLE "poker"
 
 

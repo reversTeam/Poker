@@ -1,5 +1,7 @@
 CC=						gcc
 
+USER=triviere
+
 NAME=					client
 NAME_SERVER=			server
 
