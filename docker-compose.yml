@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'poker'
+      MYSQL_USER: 'poker'
+      MYSQL_PASSWORD: 'p0k$r'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/populate.sql:/docker-entrypoint-initdb.d/dump.sql
+  poker:
+    build: ./poker
+    restart: always
+    environment:
+      USER: triviere
